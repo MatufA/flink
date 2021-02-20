@@ -7,9 +7,9 @@ Job Description:
 * For each letter dump the data into a separate file.
 
 # Prerequisites
-Scala version 2.12.11.
-Flink version 1.12.1.
-Sbt version 1.3.13.
+* Scala version 2.12.11
+* Flink version 1.12.1
+* Sbt version 1.3.13
 
 # Usage
 You can set a program argument to change the root output path, otherwise ./output.
