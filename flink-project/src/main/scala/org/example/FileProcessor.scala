@@ -9,7 +9,7 @@ import org.apache.flink.util.Collector
 
 import scala.reflect.io.Path
 
-object SplitLine {
+object FileProcessor {
   def main(args: Array[String]): Unit = {
     val rootPath: fs.Path = args.headOption match {
       case None => new fs.Path("./output")
