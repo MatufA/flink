@@ -17,3 +17,5 @@ flink run -c org.example.FileProcessor /path/to/Flink Project-assembly-0.1-SNAPS
 You can also run your application from within IntelliJ:  
 select the classpath of the 'mainRunner' module in the run/debug configurations.
 Simply open 'Run -> Edit configurations...' and then select 'mainRunner' from the "Use classpath of module" dropbox. 
+
+**Note- the data samples are under the resources folder**
