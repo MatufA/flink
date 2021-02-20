@@ -1,13 +1,19 @@
+# Flink Samples
 A Flink application project using Scala and SBT.
 
-To run and test your application locally, you can just execute `sbt run` then select the main class that contains the Flink job . 
+# Prerequisites
+Scala version 2.12.11.
+Flink version 1.12.1.
+Sbt version 1.3.13.
 
-You can also package the application into a fat jar with `sbt assembly`, then submit it as usual, with something like: 
+# Usage
+You can set a program argument to change the root output path, otherwise ./output.
 
 ```
-flink run -c org.example.WordCount /path/to/your/project/my-app/target/scala-2.11/testme-assembly-0.1-SNAPSHOT.jar
+flink run -c org.example.FileProcessor /path/to/Flink Project-assembly-0.1-SNAPSHOT.jar "/path/to/default/output"
 ```
 
 
-You can also run your application from within IntelliJ:  select the classpath of the 'mainRunner' module in the run/debug configurations.
+You can also run your application from within IntelliJ:  
+select the classpath of the 'mainRunner' module in the run/debug configurations.
 Simply open 'Run -> Edit configurations...' and then select 'mainRunner' from the "Use classpath of module" dropbox. 
